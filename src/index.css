@@ -1,0 +1,218 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.content{
+  height: 78vh;
+}
+
+.register-page{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+/* transection page */
+.filters{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 0 3px rgb(112, 112, 112);
+}
+/* navbar */
+.custom-navbar {
+  background-color: #1f2937 !important; /* Dark slate */
+  padding: 12px 20px;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link,
+.custom-navbar .navbar-text {
+  color: #ffffff !important;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #93c5fd !important;
+}
+
+/* transection page */
+
+/* antd icons */
+
+
+.anticon svg {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/*  home page */
+/* ================== GLOBAL RESET ================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+}
+
+/* ================== LAYOUT FIX (FOR STICKY FOOTER) ================== */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* ================== FILTER SECTION ================== */
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.filters h6 {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.filters .ant-select,
+.filters .ant-picker {
+  width: 200px;
+}
+
+/* ================== SWITCH ICONS ================== */
+.switch-icons {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+.active-icon {
+  color: rgb(7, 202, 39);;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.inactive-icon {
+  color: #afadad;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.inactive-icon:hover {
+   color: rgb(7, 202, 39);
+}
+
+/* ================== CONTENT ================== */
+.content {
+  background: transparent;
+}
+
+/* ================== TABLE ================== */
+.ant-table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-table-thead > tr > th {
+  background-color: #f0f2f5;
+  font-weight: 600;
+}
+
+/* ================== ANALYTICS ================== */
+.card {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: none;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.card-header {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.card-body h5 {
+  margin-bottom: 6px;
+}
+
+/* Progress circle spacing */
+.ant-progress-circle {
+  margin-right: 15px;
+}
+
+/* ================== CATEGORY CARDS ================== */
+h4 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #333;
+
+}
+
+/* ================== MODAL ================== */
+.ant-modal-content {
+  border-radius: 10px;
+}
+
+/* ================== BUTTONS ================== */
+button.btn-primary {
+  border-radius: 6px;
+  padding: 6px 16px;
+}
+
+/* ================== FOOTER (STICKY) ================== */
+.footer {
+  background-color: #1f2937;
+  color: #fff;
+  text-align: center;
+  padding: 16px 10px;
+  margin-top: auto;
+}
+
+.footer h6 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters .ant-select,
+  .filters .ant-picker {
+    width: 100%;
+  }
+
+  .switch-icons {
+    justify-content: center;
+  }
+}
